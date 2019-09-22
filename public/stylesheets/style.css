@@ -1,0 +1,26 @@
+/* 1. Global styles
+================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3FBFF;
+  color: #1C292E;
+}
+
+/* 2. Typography
+================================================== */
+/* 3. Structure
+================================================== */
+section {
+  padding: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 4. Page styles
+================================================== */
+
+/*# sourceMappingURL=style.css.map */

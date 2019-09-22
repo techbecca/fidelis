@@ -1,0 +1,34 @@
+
+$alice-blue: #F3FBFF; //lightest, almost white
+$jungle-mist: #B4CED9; //light
+$horizon: #6092A6; //medium, brand color
+$mirage: #1C292E; //dark, almost black
+
+/* 1. Global styles
+================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $alice-blue;
+  color: $mirage;
+}
+
+/* 2. Typography
+================================================== */
+
+
+/* 3. Structure
+================================================== */
+section {
+  padding: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 4. Page styles
+================================================== */
+.banner {}
