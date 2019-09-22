@@ -1,7 +1,7 @@
 
 $alice-blue: #F3FBFF; //lightest, almost white
 $jungle-mist: #B4CED9; //light
-$horizon: #6092A6; //medium, brand color
+$horizon: #6B9BB5; //medium, brand color
 $mirage: #1C292E; //dark, almost black
 
 /* 1. Global styles
@@ -9,26 +9,75 @@ $mirage: #1C292E; //dark, almost black
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background-color: $alice-blue;
   color: $mirage;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* 2. Typography
 ================================================== */
+h1,h2,h3 {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 0.1rem;
+}
 
+h1 {
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: $horizon;
+}
 
 /* 3. Structure
 ================================================== */
 section {
-  padding: 10%;
+  height: 95vh;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 /* 4. Page styles
 ================================================== */
-.banner {}
+.banner {
+  background-color: $horizon;
+  color: $alice-blue;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.banner__title {
+  text-transform: uppercase;
+}
+
+.banner__subtitle {
+  font-size: 2rem;
+  font-style: italic;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+
+/* Companies */
+.companies {
+  min-width: 30vw;
+  padding: 30px;
+}
+
+.companies__card {
+  margin: 2em auto;
+}
