@@ -62,7 +62,7 @@ header {
   background-color: $mirage;
   color: $alice-blue;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   min-height: 5rem;
   align-items: center;

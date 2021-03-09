@@ -55,7 +55,7 @@ header {
   background-color: #1C292E;
   color: #F3FBFF;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   min-height: 5rem;
   align-items: center;
