@@ -22,6 +22,14 @@ body {
 
 /* 2. Typography
 ================================================== */
+.brand-name {
+  font-family: 'Libre Baskerville', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
 h1,h2,h3 {
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 0.1rem;
@@ -50,21 +58,41 @@ section {
   align-items: center;
 }
 
+header {
+  background-color: $mirage;
+  color: $alice-blue;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  min-height: 5rem;
+  align-items: center;
+}
+
+nav {
+  width: 30%;
+ > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  }
+}
+
 /* 4. Page styles
 ================================================== */
 .banner {
   background-color: $horizon;
   color: $alice-blue;
-  font-family: 'Libre Baskerville', serif;
   text-align: center;
   padding: 1rem 2rem;
 }
 
 .banner__title {
+  font-family: 'Libre Baskerville', serif;
   text-transform: uppercase;
 }
 
 .banner__subtitle {
+  font-family: 'Libre Baskerville', serif;
   font-size: 2rem;
   font-style: italic;
   padding: 0;
