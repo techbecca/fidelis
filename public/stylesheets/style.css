@@ -62,12 +62,17 @@ header {
 }
 
 nav {
-  width: 30%;
+  width: 28rem;
 }
 nav > ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0.1rem;
+}
+nav a:hover {
+  color: #B4CED9;
 }
 
 /* 4. Page styles

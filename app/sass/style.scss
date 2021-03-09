@@ -69,11 +69,16 @@ header {
 }
 
 nav {
-  width: 30%;
+  width: 28rem;
  > ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 0.1rem;
+  }
+    a:hover {
+    color: $jungle-mist;
   }
 }
 
