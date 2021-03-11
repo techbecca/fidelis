@@ -51,7 +51,7 @@ a:hover {
 /* 3. Structure
 ================================================== */
 section {
-  height: 95vh;
+  min-height: 45vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
