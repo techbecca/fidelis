@@ -15,6 +15,14 @@ body {
 
 /* 2. Typography
 ================================================== */
+.brand-name {
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
 h1, h2, h3 {
   font-family: "Libre Baskerville", serif;
   letter-spacing: 0.1rem;
@@ -36,11 +44,51 @@ a:hover {
 /* 3. Structure
 ================================================== */
 section {
-  height: 95vh;
+  min-height: 45vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+
+header {
+  background-color: #1C292E;
+  color: #F3FBFF;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  min-height: 5rem;
+  align-items: center;
+}
+
+nav {
+  width: 28rem;
+}
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0.1rem;
+}
+nav a:hover {
+  color: #B4CED9;
+}
+
+footer {
+  background-color: #1C292E;
+  color: #F3FBFF;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+address {
+  display: flex;
+  flex-flow: column;
+  margin: 30px 0;
+  line-height: 1.5;
 }
 
 /* 4. Page styles
@@ -48,16 +96,17 @@ section {
 .banner {
   background-color: #6B9BB5;
   color: #F3FBFF;
-  font-family: "Libre Baskerville", serif;
   text-align: center;
   padding: 1rem 2rem;
 }
 
 .banner__title {
+  font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
 }
 
 .banner__subtitle {
+  font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   font-style: italic;
   padding: 0;
