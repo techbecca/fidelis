@@ -20,6 +20,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.img-container {
+  overflow: hidden;
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+
 /* 2. Typography
 ================================================== */
 .brand-name {
@@ -66,10 +76,12 @@ header {
   justify-content: space-evenly;
   min-height: 5rem;
   align-items: center;
+  padding: 10px 20px;
 }
 
 nav {
   width: 28rem;
+  margin: 10px 0;
  > ul {
   list-style: none;
   display: flex;
@@ -118,6 +130,24 @@ address {
   font-style: italic;
   padding: 0;
   text-transform: lowercase;
+}
+
+.brand-name__container {
+  width: 30rem;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.brand-name__logo--small {
+  width: 7rem;
+}
+
+.brand-name__item {
+  padding: 10px;
 }
 
 
