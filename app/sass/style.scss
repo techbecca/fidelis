@@ -163,17 +163,19 @@ address {
 
 /* Team */
 .team-members {
+  width: 70vw;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
   align-items: center;
   column-gap: 4rem;
   row-gap: 2rem;
 }
 
 .team-member {
-  // width: 30%;
+  width: 60%;
   display: flex;
   flex-flow: column nowrap;
   > * {
@@ -185,4 +187,8 @@ address {
     font-size: 1.15em;
   }
 
+}
+
+.team-member__img-container {
+  width: 80%;
 }
