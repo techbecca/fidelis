@@ -123,4 +123,27 @@ address {
   margin: 2em auto;
 }
 
+/* Team */
+.team-members {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.team-member {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.team-member > * {
+  padding: 15px;
+}
+.team-member span {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
 /*# sourceMappingURL=style.css.map */

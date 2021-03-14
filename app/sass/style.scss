@@ -130,3 +130,29 @@ address {
 .companies__card {
   margin: 2em auto;
 }
+
+/* Team */
+.team-members {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.team-member {
+  // width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  > * {
+    padding: 15px;
+  }
+  
+  span {
+    font-weight: bold;
+    font-size: 1.15em;
+  }
+
+}
