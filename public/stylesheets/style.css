@@ -65,7 +65,7 @@ section {
   padding: 5%;
 }
 section > * {
-  margin: 2rem 0;
+  margin: 2rem;
 }
 
 section:nth-child(odd) {
@@ -166,11 +166,11 @@ address {
 
 /* Team */
 .team-members {
-  width: 70vw;
+  width: 65%;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: minmax(26rem, auto);
   justify-items: center;
   align-items: center;
   column-gap: 4rem;
@@ -178,12 +178,12 @@ address {
 }
 
 .team-member {
-  width: 60%;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
 }
 .team-member > * {
-  padding: 15px;
+  margin: 15px 0;
 }
 .team-member span {
   font-weight: bold;
@@ -191,7 +191,9 @@ address {
 }
 
 .team-member__img-container {
-  width: 80%;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
