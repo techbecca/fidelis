@@ -14,7 +14,6 @@ $mirage: #1C292E; //dark, almost black
 }
 
 body {
-  background-color: $alice-blue;
   color: $mirage;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -72,22 +71,22 @@ section {
   align-items: center;
   padding: 5%;
   > * {
-    margin: 2rem;
+    margin: 4rem;
   }
 }
 
 section:nth-child(odd) {
     flex-direction: row-reverse;
-    background-color: $horizon;
+    // background-color: $horizon;
   }
 
 header {
-  background-color: $mirage;
+  background-color: rgb(107 155 181 / 10%);//Horizon with 10% opacity
   color: $alice-blue;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  min-height: 5rem;
+  height: 6rem;
   align-items: center;
   padding: 10px 20px;
 }
@@ -126,14 +125,18 @@ address {
 /* 4. Page styles
 ================================================== */
 .banner {
-  background-color: $horizon;
+  // background-image: linear-gradient(to left bottom, #6b9bb5, #79a4bc, #87aec2, #94b7c9, #a2c1d0, #adc9d6, #b9d1dc, #c4d9e2, #d0e1e9, #dceaf1, #e7f2f8, #f3fbff);
+  background-image: linear-gradient(to right top, #1c292e, #293d44, #37515c, #466776, #557d90, #628b9f, #6f99ae, #7da8be, #8bb1c5, #98bbcb, #a6c4d2, #b4ced9);
   color: $alice-blue;
   text-align: center;
+  margin-top: -6rem;
+  height: 75vh;
 }
 
 .banner__title {
   font-family: 'Libre Baskerville', serif;
   text-transform: uppercase;
+  margin: 4rem;
 }
 
 .banner__subtitle {
@@ -142,6 +145,7 @@ address {
   font-style: italic;
   padding: 0;
   text-transform: lowercase;
+  margin: 4rem;
 }
 
 .brand-name__container {
@@ -165,7 +169,6 @@ address {
 
 /* Companies */
 .companies {
-  min-width: 30vw;
   padding: 30px;
 }
 
@@ -175,7 +178,7 @@ address {
 
 /* Team */
 .team-members {
-  width: 65%;
+  width: 50%;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -187,7 +190,6 @@ address {
 }
 
 .team-member {
-  // width: 60%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
