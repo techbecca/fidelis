@@ -110,7 +110,13 @@ address {
   display: flex;
   flex-flow: column;
   margin: 30px 0;
-  line-height: 1.5;
+}
+
+.contact-link--icon {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+  margin: 0.4rem auto;
 }
 
 /* 4. Page styles
