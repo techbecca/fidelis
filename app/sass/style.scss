@@ -170,7 +170,7 @@ address {
 }
 
 .companies__card {
-    margin: 2rem;
+    margin: 1.85rem 2.25rem;
     display: flex;
     flex-flow: column;
     border-radius: 10px;
@@ -178,10 +178,12 @@ address {
     justify-content: space-evenly;
     align-items: center;
     height: 14rem;
-    width: 20rem;
+    min-width: 22rem;
+    max-width: 40rem;
     background-color: #B4CED9;
     box-shadow: -3px 3px #6b9bb5;
     text-align: center;
+    width: 32%;
   > .img-container {
     width: 90%;
     height: auto;
