@@ -24,7 +24,7 @@ body {
   
   img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
     display: block;
   }
 }
@@ -66,19 +66,14 @@ section > h2 {
 section {
   min-height: 45vh;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 5%;
   > * {
-    margin: 4rem;
+    margin: 2rem 4rem;
   }
 }
-
-section:nth-child(odd) {
-    flex-direction: row-reverse;
-    // background-color: $horizon;
-  }
 
 header {
   background-color: rgb(107 155 181 / 10%);//Horizon with 10% opacity
@@ -174,16 +169,34 @@ address {
 
 /* Companies */
 .companies {
-  padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .companies__card {
-  margin: 2em auto;
+    margin: 1.85rem 2.25rem;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 14rem;
+    min-width: 22rem;
+    max-width: 40rem;
+    background-color: #B4CED9;
+    box-shadow: -3px 3px #6b9bb5;
+    text-align: center;
+    width: 32%;
+  > .img-container {
+    width: 90%;
+    height: auto;
+  }
 }
 
 /* Team */
 .team-members {
-  width: 50%;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
