@@ -90,16 +90,19 @@ header {
 }
 
 nav {
-  width: 28rem;
-  margin: 10px 0;
+  margin: 1rem;
  > ul {
   list-style: none;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 0.1rem;
+  > li {
+    margin: 0.5rem 1rem;
+    }
   }
-    a:hover {
+  a:hover {
     color: $jungle-mist;
   }
 }
@@ -153,13 +156,11 @@ address {
 
 /* Brand name */
 .brand-name__container {
-  width: 30rem;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 -10px;
 }
 
 .brand-name__logo--small {
@@ -235,6 +236,8 @@ address {
 /* 5. Media Queries
 ==================================== */
 
-@media only screen and (max-width: 947px) {
-
+@media only screen and (max-width: 1024px) {
+  header .brand-name {
+    display: none;
+  }
 }
