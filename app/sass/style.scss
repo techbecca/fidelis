@@ -127,6 +127,7 @@ address {
 
 /* 4. Page styles
 ================================================== */
+/* Banner */
 .banner {
   // background-image: linear-gradient(to left bottom, #6b9bb5, #79a4bc, #87aec2, #94b7c9, #a2c1d0, #adc9d6, #b9d1dc, #c4d9e2, #d0e1e9, #dceaf1, #e7f2f8, #f3fbff);
   background-image: linear-gradient(to right top, #1c292e, #293d44, #37515c, #466776, #557d90, #628b9f, #6f99ae, #7da8be, #8bb1c5, #98bbcb, #a6c4d2, #b4ced9);
@@ -150,6 +151,7 @@ address {
   margin-top: 4rem;
 }
 
+/* Brand name */
 .brand-name__container {
   width: 30rem;
   text-align: center;
@@ -198,7 +200,7 @@ address {
   }
 }
 
-/* Team */
+/* Team members*/
 .team-members {
   text-align: center;
   display: flex;
@@ -227,4 +229,12 @@ address {
   max-width: 250px;
   max-height: 250px;
   border-radius: 50%;
+}
+
+
+/* 5. Media Queries
+==================================== */
+
+@media only screen and (max-width: 947px) {
+
 }

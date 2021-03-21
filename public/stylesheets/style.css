@@ -120,6 +120,7 @@ address {
 
 /* 4. Page styles
 ================================================== */
+/* Banner */
 .banner {
   background-image: linear-gradient(to right top, #1c292e, #293d44, #37515c, #466776, #557d90, #628b9f, #6f99ae, #7da8be, #8bb1c5, #98bbcb, #a6c4d2, #b4ced9);
   color: #F3FBFF;
@@ -142,6 +143,7 @@ address {
   margin-top: 4rem;
 }
 
+/* Brand name */
 .brand-name__container {
   width: 30rem;
   text-align: center;
@@ -189,7 +191,7 @@ address {
   height: auto;
 }
 
-/* Team */
+/* Team members*/
 .team-members {
   text-align: center;
   display: flex;
@@ -217,5 +219,8 @@ address {
   max-height: 250px;
   border-radius: 50%;
 }
+
+/* 5. Media Queries
+==================================== */
 
 /*# sourceMappingURL=style.css.map */
