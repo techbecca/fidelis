@@ -33,11 +33,11 @@ body {
 
 h1, h2, h3 {
   font-family: "Libre Baskerville", serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08em;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 4em;
 }
 
 a {
@@ -65,6 +65,9 @@ section {
 }
 section > * {
   margin: 2rem 4rem;
+}
+section > h2 {
+  text-align: center;
 }
 
 header {
