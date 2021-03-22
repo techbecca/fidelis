@@ -28,16 +28,36 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.25em;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Libre Baskerville", serif;
   letter-spacing: 0.08em;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 a {
@@ -47,10 +67,6 @@ a {
 
 a:hover {
   color: #6B9BB5;
-}
-
-section > h2 {
-  font-size: 3em;
 }
 
 /* 3. Structure
@@ -226,6 +242,11 @@ address {
 @media only screen and (max-width: 1024px) {
   header .brand-name {
     display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
   }
 }
 
