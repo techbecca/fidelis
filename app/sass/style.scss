@@ -155,21 +155,25 @@ address {
   color: $alice-blue;
   text-align: center;
   margin-top: -$header-height;
-  height: 75vh;
+  min-height: 75vh;
+  padding-top: $header-height;
+}
+.banner__container {
+  margin: 5%;
+  padding: 2%;
 }
 
 .banner__title {
   font-family: 'Libre Baskerville', serif;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .banner__subtitle {
   font-family: 'Libre Baskerville', serif;
-  font-size: 2em;
   font-style: italic;
-  padding: 0;
   text-transform: lowercase;
-  margin-top: 4rem;
+  margin-top: 10%;
 }
 
 /* Brand name */
@@ -264,9 +268,14 @@ address {
   body {
     font-size: 14px;
   }
+
 }
 
 @media only screen and (max-width: 375px) {
+  // body {
+  //   font-size: 12px;
+  // }
+
   header {
     flex-flow: column nowrap;
   }
@@ -279,9 +288,16 @@ address {
 
   .brand-name__logo--small {
     width: 4rem;
-    position: relative;
-    top: 20px;
-    left: -160px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  
+
+  .banner__title {
+    font-size: 1.953em;
+  }
+
+  .banner__subtitle {
+    font-size: 1.25em;
+  }
 }
