@@ -4,6 +4,8 @@ $jungle-mist: #B4CED9; //light
 $horizon: #6B9BB5; //medium, brand color
 $mirage: #1C292E; //dark, almost black
 
+$header-height: 8rem;
+
 /* 1. Global styles
 ================================================== */
 
@@ -100,7 +102,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  height: 6rem;
+  height: $header-height;
   align-items: center;
   padding: 10px 20px;
 }
@@ -152,7 +154,7 @@ address {
   background-image: linear-gradient(to right top, #1c292e, #293d44, #37515c, #466776, #557d90, #628b9f, #6f99ae, #7da8be, #8bb1c5, #98bbcb, #a6c4d2, #b4ced9);
   color: $alice-blue;
   text-align: center;
-  margin-top: -6rem;
+  margin-top: -$header-height;
   height: 75vh;
 }
 
@@ -262,4 +264,24 @@ address {
   body {
     font-size: 14px;
   }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    flex-flow: column nowrap;
+  }
+  
+  nav > ul {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-name__logo--small {
+    width: 4rem;
+    position: relative;
+    top: 20px;
+    left: -160px;
+  }
+  
 }
