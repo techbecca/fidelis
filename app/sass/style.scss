@@ -4,6 +4,8 @@ $jungle-mist: #B4CED9; //light
 $horizon: #6B9BB5; //medium, brand color
 $mirage: #1C292E; //dark, almost black
 
+$header-height: 8rem;
+
 /* 1. Global styles
 ================================================== */
 
@@ -36,16 +38,36 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.25em;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Libre Baskerville', serif;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08em;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.052em;
+}
+
+h2 {
+ font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
 }
 
 a {
@@ -57,10 +79,6 @@ a:hover {
   color: $horizon;
 }
 
-section > h2 {
-  font-size: 3em;
-}
-
 /* 3. Structure
 ================================================== */
 section {
@@ -69,9 +87,12 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5%;
+  padding: 3rem 5%;
   > * {
     margin: 2rem 4rem;
+  }
+  > h2 {
+    text-align: center;
   }
 }
 
@@ -81,22 +102,25 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  height: 6rem;
+  height: $header-height;
   align-items: center;
   padding: 10px 20px;
 }
 
 nav {
-  width: 28rem;
-  margin: 10px 0;
+  margin: 1rem;
  > ul {
   list-style: none;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 0.1rem;
+  > li {
+    margin: 0.5rem 1rem;
+    }
   }
-    a:hover {
+  a:hover {
     color: $jungle-mist;
   }
 }
@@ -124,38 +148,41 @@ address {
 
 /* 4. Page styles
 ================================================== */
+/* Banner */
 .banner {
   // background-image: linear-gradient(to left bottom, #6b9bb5, #79a4bc, #87aec2, #94b7c9, #a2c1d0, #adc9d6, #b9d1dc, #c4d9e2, #d0e1e9, #dceaf1, #e7f2f8, #f3fbff);
   background-image: linear-gradient(to right top, #1c292e, #293d44, #37515c, #466776, #557d90, #628b9f, #6f99ae, #7da8be, #8bb1c5, #98bbcb, #a6c4d2, #b4ced9);
   color: $alice-blue;
   text-align: center;
-  margin-top: -6rem;
-  height: 75vh;
+  margin-top: -$header-height;
+  min-height: 75vh;
+  padding-top: $header-height;
+}
+.banner__container {
+  margin: 5%;
+  padding: 2%;
 }
 
 .banner__title {
   font-family: 'Libre Baskerville', serif;
   text-transform: uppercase;
-  margin: 4rem;
+  line-height: 1.5;
 }
 
 .banner__subtitle {
   font-family: 'Libre Baskerville', serif;
-  font-size: 2rem;
   font-style: italic;
-  padding: 0;
   text-transform: lowercase;
-  margin: 4rem;
+  margin-top: 10%;
 }
 
+/* Brand name */
 .brand-name__container {
-  width: 30rem;
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  margin: 0 -10px;
 }
 
 .brand-name__logo--small {
@@ -172,6 +199,7 @@ address {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 85%;
 }
 
 .companies__card {
@@ -179,28 +207,29 @@ address {
     display: flex;
     flex-flow: column;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1rem;
     justify-content: space-evenly;
     align-items: center;
     height: 14rem;
-    min-width: 22rem;
+    min-width: 15rem;
     max-width: 40rem;
-    background-color: #B4CED9;
-    box-shadow: -3px 3px #6b9bb5;
+    border: 2px solid $jungle-mist;
+    box-shadow: -3px 3px $horizon;
     text-align: center;
-    width: 32%;
+    width: 60%;
   > .img-container {
     width: 90%;
     height: auto;
   }
 }
 
-/* Team */
+/* Team members*/
 .team-members {
   text-align: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  width: 85%;
 }
 
 .team-member {
@@ -223,4 +252,52 @@ address {
   max-width: 250px;
   max-height: 250px;
   border-radius: 50%;
+}
+
+
+/* 5. Media Queries
+==================================== */
+
+@media only screen and (max-width: 1024px) {
+  header .brand-name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  // body {
+  //   font-size: 12px;
+  // }
+
+  header {
+    flex-flow: column nowrap;
+  }
+  
+  nav > ul {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brand-name__logo--small {
+    width: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .banner__title {
+    font-size: 1.953em;
+  }
+
+  .banner__subtitle {
+    font-size: 1.25em;
+  }
 }
